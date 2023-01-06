@@ -15,6 +15,11 @@
                 correct.addEventListener("click", function(){
                     correct.style.backgroundColor = "green";
                     feedback.innerHTML = "Correct!";
+                    
+                    if(correct.style.backgroundColor == "green"){
+                        correct.style.backgroundColor = "";
+                    }
+                    
                 })
                 //when incorrect answer clicked
                 for (let i = 0; i < incorrects.length; i++)
