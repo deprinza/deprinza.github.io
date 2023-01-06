@@ -13,11 +13,12 @@
                 let feedback = document.querySelector("#feedback");
                 //when correct answer clicked
                 correct.addEventListener("click", function(){
-                    correct.style.backgroundColor = "green";
-                    feedback.innerHTML = "Correct!";
-                    
                     if(correct.style.backgroundColor == "green"){
                         correct.style.backgroundColor = "";
+                        feedback.innerHTML = "";
+                    }else{
+                        correct.style.backgroundColor = "green";
+                        feedback.innerHTML = "Correct!";
                     }
                     
                 })
